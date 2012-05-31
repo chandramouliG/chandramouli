@@ -1,0 +1,48 @@
+<div class="work_menu">
+  <kbd><%= link_to "ABOUT ME", :class=>"main_menu" ,:controller=>'homes', :action=>'about_me' %></kbd>..|..
+  <kbd><%= link_to "CONTACT ME", :class=>"main_menu",:controller=>'homes', :action=>'contact'%></kbd>..|..
+  <span class="main_menu selected">
+    <kbd>
+      <%= "MY WORK" %>
+    </kbd>
+  </span>..|..
+  <kbd><%= link_to "RESUME", :class=>"main_menu " ,:controller=>'homes', :action=>'resume' %></kbd>
+</div>
+
+<h3>Portfolio</h3>
+
+<div id="s3slider">
+   <ul id="s3sliderContent">
+      <li class="s3sliderImage">
+          <img src="/images/wattbot.png"  width="635px" height="440px"/>
+          <span>
+            <b>Wattbot</b> is a web-based energy expert that simplifies the design, financing and purchase of clean energy solutions<br/> automatically. It's a US based energy advisor, in Los Angeles, San Francisco, San Diego and New York.<br/><br/> 
+            <b>Keywords: Ruby, Ruby on Rails, MySQL, jQuery, Cucumber, Git </b>
+          </span>
+      </li>
+      <li class="s3sliderImage">
+          <img src="/images/revenuemed.png"  width="635px" height="440px" />
+          <span>
+            Revenue Med is a US based revenue cycle consulting service, engineered a variety of solutions (RevRemit, RevClaim,<br/>
+             RevDental) that convert paper EOB's into ANSI 835 files.<br/><br/>
+            <b>Keywords: Ruby, Rails, HTML, CSS, Javascript, Mysql, SVN</b>
+          </span>
+      </li>
+      <li class="s3sliderImage">
+          <img src="/images/spendingdoctor.png"  width="635px" height="440px" />
+          <span>
+            <b>Spending doctor</b> is a web-based healthcare consumer, acting as an advocate for the healthcare consumer, reviewing <br/>every bill,negotiating rates where requested and acting on the consumer’s behalf with the providers they are paying.<br/><br/>
+            <b>Keywords: Ruby, Ruby on Rails, MySQL, jQuery, Rspec, Cucumber, Git</b>
+          </span>
+      </li>
+      <div class="clear s3sliderImage"></div>
+   </ul>
+</div>
+
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function() { 
+	   $('#s3slider').s3Slider({ 
+	      timeOut: 4000 
+	   });
+	});
+</script>

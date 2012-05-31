@@ -1,0 +1,31 @@
+<div id="description">
+    Hi, this is Chandramouli<br/>
+    Web Developer/Designer from India.<br/>
+    Find out more about me.......!
+</div>
+<div id ="menu_button">
+    <%= link_to(image_tag("mywork_button.png", :class=>"main_menu"),:controller=>'homes', :action=>'portfolio')%>
+    <%= link_to(image_tag("aboutme_button.png", :class=>"main_menu"),:controller=>'homes', :action=>'about_me')%>
+</div>
+    <hr/>
+<div id= "networks_links">
+    <span id="network_text">
+        Check me in..
+    </span>
+    <ul style="list-style:none; display: block;">
+        <li style="margin-left:25%;">
+            <span style=" padding-right: 30px;">
+                <%= link_to(image_tag("linkedin.png", :id=>"linkedin", :title=>"Linked In"),"http://in.linkedin.com/pub/chandramouli-g/24/a76/783")%>
+            </span>
+            <span style=" padding-right: 30px;">
+                <%= link_to(image_tag("facebook.png", :id=>"fb", :title=>"Facebook"),"http://www.facebook.com/chandramoulig")%>
+            </span>
+            <span style=" padding-right: 30px;">
+                <%= link_to(image_tag("twitter.png", :id=>"twitter", :title=>"Twitter"),"https://twitter.com/#!/mouli85" )%>
+            </span>
+            <span style=" padding-right: 30px;">
+                <%= image_tag ("skype.png", :id=>"skype",:title =>"mouli85") %>
+            </span>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,53 @@
+<div class="about_menu">
+    <kbd><%= link_to "MY WORK", :class=>"main_menu" ,:controller=>'homes', :action=>'portfolio'%></kbd>..|..
+    <kbd><%= link_to "ABOUT ME", :class=>"main_menu" ,:controller=>'homes', :action=>'about_me' %></kbd>..|..
+    <kbd><%= link_to "MY GALLERY", :class=>"main_menu ",:controller=>'homes', :action=>'mygallery'%></kbd>..|..
+    <span class="main_menu selected">
+        <kbd>
+            <%= "CONTACT ME" %>
+        </kbd>
+    </span>|
+</div>
+
+<h3>Get touch with me</h3>
+
+<div id="contact_fields">
+    <%= form_tag({:controller => "homes", :action => "send_email"}, :id => "contact_form") %>
+    <p>
+        <label>Your Name:</label>
+        <%= text_field_tag "name" %>             
+    </p>
+    <p>
+        <label>Your E-mail:</label>
+        <%= text_field_tag "email"%>
+    </p>
+    <p>
+        <label>Subject:</label>
+        <%= text_field_tag "subject" %>
+    </p>
+    <p>
+        <label>Your Message:</label>
+        <%= text_area_tag "message","", :size=>"48*30" %>
+    </p>        
+    <p>
+        <label>&nbsp;</label>
+        <%= submit_tag "Contact Me" , :id=>'mailme'%>
+    </p>
+</div>
+<hr/>
+<p>
+   <table width=70% border="0">
+        <tr>
+            <td>
+                <%= image_tag("mail_id.png" ,:id=>"mail_ids" ,:title=>"Email")%>
+            </td>
+            <td>
+
+            <span class="resume_content">
+                 <u>Gmail: mouli.g85@gmail.com</u> <br/>
+                 <u>Hotmail: mouli85@hotmail.com</u>
+            </span>
+            </td>
+        </tr>
+    </table>    
+</p>

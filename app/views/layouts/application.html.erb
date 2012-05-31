@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chandramouli</title>
+  <%= stylesheet_link_tag :all %>
+  <%= javascript_include_tag "jquery","s3Slider","s3SliderPacked","jquery.lightbox-0.5" %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+<div id="wrapper">
+   <div id ="header">
+        <div id = 'logo'>
+           <a href ="/homes/index"><%= image_tag("logo.png", :id=>"logo_name") %></a>
+        </div>
+   </div>
+</div>   
+<div id="content">
+    <%= yield %>      
+</div>
+<div id ="footer">
+  <kbd>&copy Chandramouli 2012.</kbd>        
+</div>
+</div> 
+</body>
+</html>
